@@ -1,0 +1,85 @@
+package com.collection;
+
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class LRUCache {
+
+	int size;
+	Deque<Integer> dq ;//element present in DQ takes n time
+	HashSet<Integer> set;//only to make element present in DQ or not
+
+	public LRUCache(int size) {
+		this.size = size;
+		dq = new LinkedList<Integer>();
+		set = new HashSet<Integer>();
+	}
+
+	public static void main(String[] args) {
+		LRUCache obj = new LRUCache(4);
+		obj.refer(11);
+		obj.print();
+		obj.refer(11);
+		obj.print();
+		obj.refer(11);
+		obj.print();
+		obj.refer(11);
+		obj.print();
+
+		obj.refer(22);
+		obj.print();
+		obj.refer(22);
+		obj.print();
+		obj.refer(22);
+		obj.print();
+
+		obj.refer(33);
+		obj.print();
+		obj.refer(33);
+		obj.print();
+		obj.refer(33);
+		obj.print();
+
+		obj.refer(22);
+		obj.print();
+		obj.refer(22);
+		obj.print();
+		obj.refer(22);
+		obj.print();
+
+	}
+
+	public void print() {
+		Iterator<Integer> it = dq.iterator();
+		System.out.print("LRU cache : ");
+		while (it.hasNext()) {
+			System.out.print(it.next() + " ");
+		}
+		System.out.println();
+	}
+
+	private void refer(int key) {
+
+		if (! set.contains(key)) {
+			if(dq.size() == size) {
+				set.remove(dq.removeLast());
+			}
+			set.add(key);
+			dq.addFirst(key);
+			
+		}else {
+			if(dq.getFirst() != key) {
+				Iterator<Integer> it = dq.iterator();
+				while(it.hasNext()) {
+					if(key == it.next()) {
+						dq.remove();
+						break;
+					}
+				}
+			}
+			dq.addFirst(key);
+		}
+	}
+}
