@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Ruchichouradiya
-I am dedicated professional with over 12 years of IT exposure in Software and Product Development and Testing and always keen to take on new challenges and contribute to the growth and success of the companies I work with. 
+I am dedicated professional around 13 years of IT exposure in Software and Product Development and Testing and always keen to take on new challenges and contribute to the growth and success of the companies I work with. 
 
 - Have Strong foundation in Java, Spring, and Spring Boot web application and API development. 
 - Successfully coordinated between onshore and offshore teams, provided guidance and mentorship to 
@@ -25,4 +25,3 @@ Others: HP QC, Oracle Test Suite , Rally, Putty , Eclipse , IntelliJ
 
 - 📫 How to reach me ...
 Email id - ruchi.chouradiya@gmail.com
-Contact - 7384079255
