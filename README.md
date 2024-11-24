@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Ruchichouradiya
+👋 Hi, I’m @Ruchichouradiya
 I am dedicated professional around 13 years of IT exposure in Software and Product Development and Testing and always keen to take on new challenges and contribute to the growth and success of the companies I work with. 
 
 - Have Strong foundation in Java, Spring, and Spring Boot web application and API development. 
